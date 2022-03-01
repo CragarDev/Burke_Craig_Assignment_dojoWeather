@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craig Burke - Dojo Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <h1>How's the weather down there?</h1> -->
+    <nav>
+      <div class="nav-bar flex container">
+        <h1>DojoWeather</h1>
+        <ul class="flex">
+          <li onclick="alert('Loading weather report...')">Burbank</li>
+          <li onclick="alert('Loading weather report...')">Chicago</li>
+          <li onclick="alert('Loading weather report...')">Dallas</li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="main-header flex">
+        <h2>San Jose</h2>
+        <form class="temp-selector">
+          <label for="tempSel">show temperature in</label>
+          <select name="temp-sel" id="tempSel" onchange="changeDegree()">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+          </select>
+        </form>
+      </div>
+      <hr />
+      <div class="main-content flex">
+        <div class="day">
+          <h3 class="mb">Today</h3>
+          <img src="./images/assets/some_rain.png" alt="some rain" class="mb" />
+          <h4 class="mb">some rain</h4>
+          <div class="temperatures flex">
+            <h2 class="highs"><span class="tempDegree">24</span>°</h2>
+            <h2 class="lows"><span class="tempDegree">18</span>°</h2>
+          </div>
+        </div>
+        <div class="day">
+          <h3 class="mb">Tomorrow</h3>
+          <img src="./images/assets/some_sun.png" alt="some rain" class="mb" />
+          <h4 class="mb">some sun</h4>
+          <div class="temperatures flex">
+            <h2 class="highs"><span class="tempDegree">27</span>°</h2>
+            <h2 class="lows"><span class="tempDegree">19</span>°</h2>
+          </div>
+        </div>
+        <div class="day">
+          <h3 class="mb">Friday</h3>
+          <img
+            src="./images/assets/some_clouds.png"
+            alt="some rain"
+            class="mb"
+          />
+          <h4 class="mb">some clouds</h4>
+          <div class="temperatures flex">
+            <h2 class="highs"><span class="tempDegree">21</span>°</h2>
+            <h2 class="lows"><span class="tempDegree">16</span>°</h2>
+          </div>
+        </div>
+        <div class="day">
+          <h3 class="mb">Saturday</h3>
+          <img src="./images/assets/some_sun.png" alt="some rain" class="mb" />
+          <h4 class="mb">some sun</h4>
+          <div class="temperatures flex">
+            <h2 class="highs"><span class="tempDegree">26</span>°</h2>
+            <h2 class="lows"><span class="tempDegree">21</span>°</h2>
+          </div>
+        </div>
+      </div>
+      <footer id="cookiePopup" class="container flex">
+        <img src="./images/assets/cookie.png" alt="cookie" />
+        <div class="cookie-text">
+          <h3>Stop? Cookie time</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis omnis soluta itaque aliquid ipsam, aspernatur
+            exercitationem atque repudiandae, voluptatum sint animi beatae
+            cupiditate <a href="#">voluptatem quaerat...</a>
+          </p>
+        </div>
+        <button onclick="remove(cookiePopup)">I Accept</button>
+      </footer>
+    </main>
+    <script src="./dojoWeather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: lighter;
+}
+
+/* Utility selections */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+hr {
+  border: 2px solid #000;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+/* END - utility classes */
+
+body {
+  background-color: white;
+  color: whitesmoke;
+}
+
+/* nav  */
+nav {
+  /* background-color: rgb(145, 189, 246); */
+  background-color: rgb(145, 189, 246);
+}
+
+nav h1 {
+  font-size: 3.25rem;
+  padding: 15px 0;
+}
+
+nav ul {
+  font-size: 1.75rem;
+  list-style: none;
+  color: white;
+}
+
+/*  END - nav */
+
+/* main */
+
+/* main header */
+.main-header {
+  background-color: white;
+  min-height: 100px;
+  color: black;
+}
+
+.main-header h2 {
+  font-size: 2.75em;
+}
+
+.main-header label {
+  font-size: 1.5em;
+}
+
+select {
+  padding: 5px;
+  font-size: 1.25em;
+  margin-left: 5px;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+/* main content */
+
+.day {
+  flex: 1;
+  background-color: rgb(235, 235, 235);
+  min-height: 450px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.day img {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.day h3,
+h4 {
+  color: black;
+}
+
+.day h3 {
+  font-size: 2.5em;
+}
+
+.day h4 {
+  font-size: 1.75em;
+}
+
+.temperatures {
+  padding: 15px;
+}
+
+.highs,
+.lows {
+  font-size: 2.4em;
+}
+
+.highs {
+  color: red;
+}
+
+.lows {
+  color: blue;
+}
+
+/* END - Main */
+
+/* footer */
+
+footer {
+  background-color: white;
+  /* min-height: 160px; */
+  position: fixed;
+  bottom: 10px;
+  padding: 20px;
+  color: black;
+  border: 4px solid #000;
+}
+
+footer img {
+  height: 100px;
+}
+
+footer h3 {
+  font-size: 2.25em;
+}
+
+footer p {
+  font-size: 1.4em;
+}
+
+footer button {
+  background-color: rgb(139, 181, 236);
+  border: 3px solid #000;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  padding: 0.3em 0.9em;
+  box-shadow: 3px 3px black;
+}
+
+/* END - footer */
